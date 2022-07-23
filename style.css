@@ -3,4 +3,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* ---------------- Styling for dual-diagnal images ------------------- */
+.image-container {
+    position: relative;
+    width: 100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px) brightness(0.5);
+}
+
+.left, .right {
+    position: absolute;
+    height: 100vh;
+    width: 67%;
+}
+
+.left {
+    left: 0;
+    top: 0;
+    background-image: url(/images/tools.jpg);
+    background-size: 130%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+}
+
+.right {
+    right: 0;
+    top: 0;
+    background-image: url(/images/helmet.jpg);
+    background-size: 120%;
+    -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+@font-face { font-family: Gobold; src: url('/fonts/Gobold\ Bold.otf'); } 
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
   }
+
+/* Text styling for title */
+.landing-text {
+    font-family: Gobold;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+/* --------------------------------------------------------------------- */
