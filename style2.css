@@ -1,0 +1,51 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face { font-family: Gobold; src: url('/fonts/Gobold\ Bold.otf'); } 
+
+.option-2 {
+    height: 100vh;
+
+    background:
+    linear-gradient(rgba(82, 58, 40, .7),rgba(82, 58, 40, .7)),
+    url('/images/blueprint.jpg') no-repeat center center fixed;
+
+
+    background-size: 100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    /* filter: blur(3px); */
+    filter: blur(3px) brightness(0.6);
+
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+
+/* Text styling for title */
+.landing-text {
+    font-family: Gobold;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+
+.line{
+    width: 25%;
+    height: 50px;
+    border-bottom: 3px solid #f29f33;
+    position: absolute;
+    margin-top: 40px;
+    }
