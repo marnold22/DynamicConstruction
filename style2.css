@@ -12,7 +12,7 @@
 
     background:
     linear-gradient(rgba(82, 58, 40, .7),rgba(82, 58, 40, .7)),
-    url('/images/blueprint.jpg') no-repeat center center fixed;
+    url('/images/draft.jpg') no-repeat center center fixed;
 
 
     background-size: 100%;
@@ -42,10 +42,14 @@
     width: 100%;
 }
 
-.line{
+.cs {
+    padding-top: 30%;
+}
+
+.line {
     width: 25%;
     height: 50px;
     border-bottom: 3px solid #f29f33;
     position: absolute;
     margin-top: 40px;
-    }
+}
